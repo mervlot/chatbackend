@@ -43,7 +43,7 @@ const verifySocketToken = (socket, next) => {
 const server = http.createServer(app);
 const io = socketio(server, {
     cors: {
-        origin: ['http://localhost:3000', 'http://localhost:3001'],
+        origin: ["https://merv-chat.vercel.app/"],
         methods: ['GET', 'POST'],
         credentials: true
     }
