@@ -16,10 +16,10 @@ const authRoutes = require('./routes/auth');
 const Chat = require('./models/Chat');
 
 const app = express();
-// app.use(cors({
-//     origin: ['https://merv-chat.vercel.app'],
-//     credentials: true
-// }));
+app.use(cors({
+    origin: ['https://merv-chat.vercel.app'],
+    credentials: true
+}));
 app.use(express.json());
 app.use(cookieParser());
 
