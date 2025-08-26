@@ -17,8 +17,8 @@ const Chat = require('./models/Chat');
 
 const app = express();
 app.use(cors({
-    origin: ['https://merv-chat.vercel.app'],
-    credentials: true
+  origin: 'https://merv-chat.vercel.app', // your deployed frontend
+  credentials: true, // needed for cookies
 }));
 app.use(express.json());
 app.use(cookieParser());
